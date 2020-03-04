@@ -47,7 +47,7 @@ nav a+a{
     z-index: -1;
 }
 .about-me{
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--main-color-light);
@@ -67,8 +67,8 @@ span {
     font-size: 18px;
 }
 .education {
-    margin-top: 50px;
-    padding-top: 30px;
+    margin-top: 20px;
+    padding: 30px;
     padding-bottom: 30px;
     color: var(--blue-color-light);
     text-align: center;
@@ -89,18 +89,18 @@ th, .years{
     width: 50%;
 }
 .career{
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 30px;
     background-color: var(--main-color-light);
     color: var(--main-text-color);
 }
 .hobbies {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 30px;
     color: var(--main-color-light);
 }
 .footer {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 15px;
     background-color: var(--main-color-light);
     color: var(--main-text-color);
