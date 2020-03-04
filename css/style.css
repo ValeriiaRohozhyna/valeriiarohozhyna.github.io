@@ -1,0 +1,115 @@
+:root{
+    --main-color-light:#0b82fb;
+    --main-text-color:white;
+    --main-color-dark: #0862bc;
+    --table-border: rgb(211, 211, 211);
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+}
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.nav-menu {
+    font-weight: 500;
+    color: var(--main-color-light);
+}
+.nav-menu a{
+    padding: 10px;
+}
+.nav-menu a:hover{
+    color: var(--main-color-dark);
+    transition: .3s;
+}
+nav a+a{
+    margin-left: 20px;
+}
+.intro{
+    width: 800px;
+    margin: auto;
+}
+.intro-img{
+    transform: rotate(40deg);
+    position: relative;
+    top: 150px;
+    z-index: -1;
+}
+.about-me{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--main-color-light);
+    color: var(--main-text-color);
+}
+.title-2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+}
+p, li{
+    margin-bottom: 30px;
+}
+span {
+    font-weight: 500;
+    font-size: 18px;
+}
+.education {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--blue-color-light);
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td, th {
+    padding: 15px;
+    border: 1px solid var(--table-border);
+}
+th, .years{
+    color: var(--main-color-dark);
+    font-weight: 500;
+}
+.table {
+    width: 50%;
+}
+.career{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--main-color-light);
+    color: var(--main-text-color);
+}
+.hobbies {
+    margin-top: 50px;
+    padding: 30px;
+    color: var(--main-color-light);
+}
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--main-color-light);
+    color: var(--main-text-color);
+    text-align: center;
+}
+.no-margin {
+    margin-bottom: 0;
+}
+
+
+
+
