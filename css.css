@@ -1,6 +1,4 @@
-p {
-    color: blue;
-}
+
 p.some-class {
     color: red;
 }
@@ -9,4 +7,7 @@ p.some-text {
 }
 p.but {
     text-decoration: underline;
+}
+body {
+    font-size: 20px;
 }
