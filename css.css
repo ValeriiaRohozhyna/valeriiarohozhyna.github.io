@@ -4,3 +4,6 @@ p {
 p.some-class {
     color: red;
 }
+p.some-text {
+    color: orange;
+}
