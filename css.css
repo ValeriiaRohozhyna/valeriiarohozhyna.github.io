@@ -7,3 +7,6 @@ p.some-class {
 p.some-text {
     color: orange;
 }
+p.but {
+    text-decoration: underline;
+}
