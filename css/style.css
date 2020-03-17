@@ -17,6 +17,9 @@ body{
     top: 0;
     z-index: 10;
 }
+.logo {
+    width: 70px
+}
 .container {
     width: 1140px;
     padding: 0 15px;
@@ -55,8 +58,8 @@ nav a+a{
 }
 .about-me{
     margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background-color: var(--main-color-light);
     color: var(--main-text-color);
     position: relative;
@@ -100,8 +103,8 @@ span {
 }
 .education {
     margin-top: 20px;
-    padding: 30px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     color: var(--blue-color-light);
     text-align: center;
 }
@@ -122,13 +125,15 @@ th, .years{
 }
 .career{
     margin-top: 20px;
-    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     background-color: var(--main-color-light);
     color: var(--main-text-color);
 }
 .hobbies {
     margin-top: 20px;
-    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     color: var(--main-color-light);
 }
 .footer {
