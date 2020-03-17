@@ -70,7 +70,7 @@ nav a+a{
     color: var(--main-text-color);
     font-weight: 500;
     position: absolute;
-    top: 220px;
+    top: 50%;
     left: -122px;
     transition: .5s;
     cursor: pointer;
