@@ -2,6 +2,7 @@
     --main-color-light:#0b82fb;
     --main-text-color:white;
     --main-color-dark: #0862bc;
+    --side-bar-color: rgb(233, 86, 23);
     --table-border: rgb(211, 211, 211);
 }
 html {
@@ -26,7 +27,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
-    background-color: var(--main-text-color)
+    background-color:var(--main-text-color);
 }
 .nav-menu {
     font-weight: 500;
@@ -58,6 +59,27 @@ nav a+a{
     padding-bottom: 30px;
     background-color: var(--main-color-light);
     color: var(--main-text-color);
+    position: relative;
+}
+.facebook{
+    padding: 20px;
+    background-color: var(--side-bar-color);
+    color: var(--main-text-color);
+    font-weight: 500;
+    position: absolute;
+    top: 220px;
+    right: -122px;
+    transition: .5s;
+}
+.facebook:hover{
+    position: absolute;
+    right: 0;
+    background-color: var(--main-text-color);
+    color: var(--main-color-light);
+}
+.facebook a:hover{
+    color: var(--main-color-dark);
+    transition: .3s;
 }
 .title-2{
     font-size: 25px;
