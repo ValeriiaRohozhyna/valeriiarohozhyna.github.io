@@ -70,6 +70,7 @@ nav a+a{
     top: 220px;
     right: -122px;
     transition: .5s;
+    cursor: pointer;
 }
 .facebook:hover{
     position: absolute;
