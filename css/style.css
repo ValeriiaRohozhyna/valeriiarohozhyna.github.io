@@ -68,15 +68,18 @@ nav a+a{
     font-weight: 500;
     position: absolute;
     top: 220px;
-    right: -122px;
+    left: -122px;
     transition: .5s;
     cursor: pointer;
 }
 .facebook:hover{
     position: absolute;
-    right: 0;
+    left: 0;
     background-color: var(--main-text-color);
     color: var(--main-color-light);
+    -webkit-box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
+    -moz-box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
+    box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
 }
 .facebook a:hover{
     color: var(--main-color-dark);
