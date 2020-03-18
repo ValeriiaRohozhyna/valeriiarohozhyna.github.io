@@ -80,9 +80,9 @@ nav a+a{
     left: 0;
     background-color: var(--main-text-color);
     color: var(--main-color-light);
-    -webkit-box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
-    -moz-box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
-    box-shadow: 25px 0px 46px 26px rgba(11,130,251,1);
+    -webkit-box-shadow: 10px 10px 0px 10px rgba(8,98,188,1);
+    -moz-box-shadow: 10px 10px 0px 10px rgba(8,98,188,1);
+    box-shadow: 10px 10px 0px 10px rgba(8,98,188,1);
 }
 .facebook a:hover{
     color: var(--main-color-dark);
