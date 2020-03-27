@@ -10,10 +10,10 @@ for (var i = 1; i <= 9; i++) {
         cell.innerText = i * j;
         row.appendChild(cell);
         if (j > i) {
-            cell.classList.add("cell-undermain")
+            cell.setAttribute("class", "cell cell-undermain")
         };
         if (i > j) {
-            cell.classList.add("cell-overmain")
+            cell.setAttribute("class", " cell cell-overmain")
         };
     }
     main.appendChild(row);
