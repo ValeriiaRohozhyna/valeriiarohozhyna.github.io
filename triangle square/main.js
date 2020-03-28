@@ -1,7 +1,7 @@
 
 function calcTriangleSquare (a, b, c) {
     var p;
-    p = (a + b + c) / 2; //perimetr
+    p = (a + b + c) / 2; //perimeter
     return Math.round(Math.sqrt(p * (p - a) + (p - b) + (p - c))); //square
 };
 
