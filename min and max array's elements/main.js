@@ -1,4 +1,4 @@
-var someArray = [10, 15, 14, 16, -15, -22, 11, 18, 14, 36]
+var someArray = [10, 15, 14, 16, -15, -22, 11, 18, 14, 36];
 
 function calcMinElem(array) {
     var minElem = array[0];
@@ -8,7 +8,7 @@ function calcMinElem(array) {
         }
     }
     return minElem;
-}
+};
 
 console.log("The minElem is: ", calcMinElem(someArray));
 
@@ -20,5 +20,6 @@ function calcMaxElem(array) {
         }
     }
     return maxElem;
-}
+};
+
 console.log("The maxElem is: ", calcMaxElem(someArray));
