@@ -24,3 +24,13 @@ function makeOddArray(array) {
 };
 
 console.log("Our odd array is:",makeOddArray(someArray));
+
+function makeSumOfArrayElem(array) {
+    var  sum = 0;
+    for (i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum;
+}
+
+console.log("Our sum of array's elemenents is:",makeSumOfArrayElem(someArray));
