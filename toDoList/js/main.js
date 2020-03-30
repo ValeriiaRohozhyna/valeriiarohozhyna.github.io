@@ -1,8 +1,12 @@
 btnAdd.addEventListener("click", addToDoItem, false);
+whatToDo.addEventListener("keydown", addToDoItem, false )
 
 var toDoList = [];
 
 function addToDoItem(e) {
+    if((e.type == "keydown") && (e.keyCode != 13)) {
+        return;
+    }
     if (whatToDo.value.length < 1) {
         return;
     }
