@@ -1,0 +1,81 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 247, 0, 0.406);
+}
+
+article {
+    margin: 100px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 500px;
+    min-height: 500px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+header h1 span{
+    margin-left: 10px;
+}
+input[type=text] {
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+button {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.3);
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: aqua;
+}
+::placeholder {
+    font-style: italic;
+}
+ul li{
+    padding: 5px;
+    transition: .3s;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+ul li+li {
+    margin-top: 15px;
+}
+ul li:hover{
+    background-color: rgba(255, 247, 0, 0.406);
+}
+ul span{
+    margin-left: 15px;
+    color: rgba(0, 138, 138, 0.425);
+    transition: .3s;
+}
+ul span:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.btn-delete {
+    cursor: pointer;
+}
