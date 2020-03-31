@@ -3,7 +3,6 @@ body {
     font-size: 18px;
     background-color: rgba(255, 247, 0, 0.406);
 }
-
 article {
     margin: 100px auto;
     padding: 50px;
@@ -16,11 +15,9 @@ article {
     width: 500px;
     min-height: 500px;
 }
-
 header {
     margin-bottom: 30px;
 }
-
 header h1 {
     font-size: 30px;
     font-weight: 600;
@@ -80,7 +77,6 @@ ul span:hover{
     color: black;
     cursor: pointer;
 }
-
 .btn-delete {
     cursor: pointer;
 }
