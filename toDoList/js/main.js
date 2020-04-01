@@ -1,46 +1,38 @@
+var input = document.querySelector("#toDoInput");
+var btnAdd = document.querySelector("#btnAdd");
+var toDoList = document.querySelector("#toDoList");
+var btnSave = document.querySelector("#btnSave");
+
+var toDoListArray = []; //main array
+
+function createToDoItem(inputText) {
+    if (!toDoListArray.includes(input.value)) {
+        var newToDoItem = document.createElement("li");
+        var deleteItem = document.createElement("span");
+        deleteItem.setAttribute("class", "delete-span fa fa-trash");
+
+        newToDoItem.innerText = inputText;
+        newToDoItem.appendChild(deleteItem);
+        toDoList.appendChild(newToDoItem);
+
+        deleteItem.addEventListener("click", function () {
+            if (confirm("Do you want to delete this item?")) {
+                toDoList.removeChild(newToDoItem);
+            }
+        }, false);
+    }
+}
+
 btnAdd.addEventListener("click", addToDoItem, false);
-whatToDo.addEventListener("keydown", addToDoItem, false)
-
-
-var toDoList = [];
 
 function addToDoItem(e) {
-    if ((e.type == "keydown") && (e.keyCode != 13)) {
+    e.preventDefault();
+    if (input.value.length < 1) {
         return;
     }
-    if (whatToDo.value.length < 1) {
-        return;
-    }
-    if (!toDoList.includes(whatToDo.value)) {
-        var toDoItem = document.createElement("li");
-        toDoItem.innerText = whatToDo.value;
-        list.appendChild(toDoItem); // to add the "li" into "ul"
+    createToDoItem(input.value);
+    toDoListArray.push(input.value);
 
-        toDoItem.addEventListener("click", toDoItemDone, false);
-        //to make toDoItem done
-        function toDoItemDone(e) {
-            if (e.target.style.textDecoration == "line-through") {
-                e.target.style.textDecoration = "";
-            } else {
-                e.target.style.textDecoration = "line-through";
-            }
-        }
-        // to add an icon to the "li" element
-        var toDoSpan = document.createElement("span");
-        toDoSpan.setAttribute("class", "fa fa-trash");
-        toDoItem.appendChild(toDoSpan);
-
-        toDoSpan.addEventListener("click", toDoItemRemove, false);
-
-        //to remove the toDoItem
-        function toDoItemRemove(e) {
-            if (confirm("Are you sure you want to delete this item?")) {
-                toDoItem.remove();
-            }
-        };
-
-        //to add the value of input to the array toDoList
-        toDoList.push(whatToDo.value);
-        whatToDo.value = "";
-    }
+    // localStorage.setItem("to_do", JSON.stringify(toDoListArray));
+    input.value = "";
 }

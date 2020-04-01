@@ -61,6 +61,19 @@ ul li{
     transition: .3s;
     border: 1px solid transparent;
     border-radius: 10px;
+    position: relative;
+    transition: .3s;
+}
+.delete-span{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    color: rgba(3, 136, 136, 0.509);
+    opacity: 0;
+    cursor: pointer;
+}
+ul li:hover .delete-span{
+    opacity: 1;
 }
 ul li+li {
     margin-top: 15px;
@@ -73,10 +86,7 @@ ul span{
     color: rgba(0, 138, 138, 0.425);
     transition: .3s;
 }
-ul span:hover{
-    color: black;
-    cursor: pointer;
-}
+
 .btn-delete {
     cursor: pointer;
 }
