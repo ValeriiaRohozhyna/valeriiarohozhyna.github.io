@@ -12,6 +12,13 @@ function createToDoItem(inputText) {
         deleteItem.setAttribute("class", "delete-span fa fa-trash");
 
         newToDoItem.innerText = inputText;
+        newToDoItem.addEventListener("click", function () {
+            if (newToDoItem.style.textDecoration == "line-through"){
+                newToDoItem.style.textDecoration = "";
+            } else {
+                newToDoItem.style.textDecoration = "line-through"
+        }
+    }, false);
         newToDoItem.appendChild(deleteItem);
         toDoList.appendChild(newToDoItem);
 
