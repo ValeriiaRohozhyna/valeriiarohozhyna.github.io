@@ -3,7 +3,7 @@ var btnAdd = document.querySelector("#btnAdd");
 var toDoList = document.querySelector("#toDoList");
 var btnSave = document.querySelector("#btnSave");
 
-var toDoListArray = []; //main array
+var toDoListArray = []; 
 
 function createToDoItem(inputText) {
     if (!toDoListArray.includes(input.value)) {
@@ -21,10 +21,7 @@ function createToDoItem(inputText) {
             }
         }, false);
     }
-}
-
-btnAdd.addEventListener("click", addToDoItem, false);
-
+};
 function addToDoItem(e) {
     e.preventDefault();
     if (input.value.length < 1) {
@@ -32,7 +29,12 @@ function addToDoItem(e) {
     }
     createToDoItem(input.value);
     toDoListArray.push(input.value);
-
-    // localStorage.setItem("to_do", JSON.stringify(toDoListArray));
     input.value = "";
 }
+
+btnAdd.addEventListener("click", addToDoItem, false);
+btnSave.addEventListener("click", saveToDoItemList, false);
+
+function saveToDoItemList(e) {
+    e.preventDefault();
+};
