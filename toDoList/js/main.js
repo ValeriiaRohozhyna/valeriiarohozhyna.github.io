@@ -16,7 +16,7 @@ function createToDoItem(inputText) {
             if (newToDoItem.style.textDecoration == "line-through"){
                 newToDoItem.style.textDecoration = "";
             } else {
-                newToDoItem.style.textDecoration = "line-through"
+                newToDoItem.style.textDecoration = "line-through";
         }
     }, false);
         newToDoItem.appendChild(deleteItem);
@@ -44,4 +44,7 @@ btnSave.addEventListener("click", saveToDoItemList, false);
 
 function saveToDoItemList(e) {
     e.preventDefault();
+    var data = JSON.stringify(toDoListArray);
+    localStorage.setItem("ToDoList", data);
+    confirm("Done!");
 };
