@@ -25,7 +25,7 @@ function createToDoItem(inputText) {
         var deleteItem = document.createElement("span");
         deleteItem.setAttribute("class", "delete-span fa fa-trash");
 
-        newToDoItem.textContent = inputText;
+        newToDoItem.innerText = inputText;
         newToDoItem.addEventListener(
             "click",
             function () {
