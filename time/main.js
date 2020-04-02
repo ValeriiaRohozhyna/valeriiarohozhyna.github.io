@@ -3,9 +3,9 @@ btnShow.addEventListener("click", showTime, false);
 function showTime() {
     var timeNow = new Date();
 
-    var second = timeNow.getSeconds();
-    var minute = timeNow.getMinutes();
-    var hour = timeNow.getHours();
+    var second = timeNow.getSeconds().toString();
+    var minute = timeNow.getMinutes().toString();
+    var hour = timeNow.getHours().toString();
     
     if (hour.length < 2) {
         hour = `0${hour}`;
