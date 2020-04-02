@@ -45,7 +45,7 @@ function createToDoItem(inputText) {
             function () {
                 if (confirm("Do you want to delete this item?")) {
                     toDoList.removeChild(newToDoItem);
-                    toDoListArray.splice(toDoListArray.indexOf(newToDoItem.textContent), 1) // delete the item from array
+                    toDoListArray.splice(toDoListArray.indexOf(newToDoItem.innerText), 1) // delete the item from array
                     localStorage.setItem("ToDoList", toDoListArray); //set all the changes into Storage
                 }
             },
