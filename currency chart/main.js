@@ -17,7 +17,7 @@ function getCurrencyData(e){
         if(XHR.readyState === 4 && XHR.status === 200){
             console.log(XHR.responseText);
             var data = JSON.parse(XHR.responseText);   
-            myChart.innerText = `For ${data[0].exchangedate} the ${data[0].cc} is ${data[0].rate}`;
+            myChart.innerText = `For ${data[0].exchangedate} the ${data[0].cc} is ${data[0].rate} UAH.`;
         }
     };
 };
