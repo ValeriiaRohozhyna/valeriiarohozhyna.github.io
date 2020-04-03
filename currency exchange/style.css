@@ -64,10 +64,11 @@ h2{
 .right h2{
     text-align: center;
 }
-.graph{
+.my-chart{
     border: 1px solid grey;
-    width: 600px;
+    width: 700px;
     height: 426px;
+    padding: 40px;
 }
 span {
     margin-left: 5px;
