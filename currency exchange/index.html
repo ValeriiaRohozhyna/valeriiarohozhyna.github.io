@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency exchange</title>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <h1>Currency exchange</h1>
+    </header>
+    <article>
+            <div class="left">
+                <form action="">
+                    <section>
+                        <h2>Choose you currency</h2>
+                        <select class="styles" name="currency" id="currency">
+                            <option disabled selected>Choose...</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="PZL">PZL</option>
+                        </select>
+                    </section>
+                    <section class="margin">
+                        <h2>Choose the date</h2>
+                        <h3>Start date is <span class="fa fa-calendar-o"></span></h3>
+                        <input class="styles" type="date" name="dateStart" id="dateStart" required>
+                        <br>
+                        <h3>End date is <span class="fa fa-calendar"></span></h3>
+                        <input class="styles" type="date" name="dateFinish" id="dateFinish" required>
+                    </section>
+                    <section class="margin">
+                        <input class="btn styles" type="submit" value="Get the info" id="btnSubmit">
+                    </section>
+                </form>
+            </div>
+            <div class="right">
+                <h2>The graph of changes <span class="fa fa-line-chart"></span></h2>
+                <section id="graph" class="graph">
+                    <div>
+                    </div>
+                </section>
+            </div>
+    </article>
+</div>
+
+
+    <script src="https://use.fontawesome.com/22ce985f52.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
